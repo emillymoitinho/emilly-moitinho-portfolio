@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+    --color-pink: #FD4FA6;
+    --color-bg: #181818;
+    --color-body: #EDE8E5;
+    --font-sans: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    @apply scroll-smooth;
+}
+
+
+body {
+    @apply font-sans bg-bg text-body;
+}
+
+h1 {
+    @apply text-4xl font-bold;
+}
+
+h2 {
+    @apply text-3xl font-semibold;
+}
+
+
+button {
+    @apply cursor-pointer;
+}
+
+@layer components {
+    .social-media {
+        @apply flex items-center justify-center text-2xl rounded-full border border-pink p-2 w-12 h-12 transform duration-300 ease-in-out hover:text-bg hover:bg-pink hover:-translate-y-1.5 hover:shadow-[0_0_25px_#b74b4b];
+    }
+
+    .container {
+        @apply flex flex-col items-center my-20!  md:my-20! max-w-[80%] gap-10;
+    }
+}
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@layer utilities {
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-bg;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-pink rounded-lg;
+}
