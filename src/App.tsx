@@ -2,7 +2,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Download } from 'lucide-react';
+// import { Download } from 'lucide-react';
 import { useState } from "react";
 import VsCodeIcon from './components/SvgIcons/VsCodeIcon';
 import HtmlIcon from './components/SvgIcons/HtmlIcon';
@@ -86,8 +86,8 @@ function App() {
                 <a href="https://github.com/emillymoitinho" target="_blank" className="social-media" title="Github"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emillysmoitinho@gmail.com" target="_blank" className="social-media" title="Email"><FontAwesomeIcon icon={faEnvelope} /></a>
               </div>
-              <a
-                href="src/Emilly-Soares-Moitinho-CV.pdf" download className="flex items-center border border-pink rounded-3xl w-fit gap-2.5 py-3! px-5! font-bold text-pink transition duration-300 ease-in-out hover:bg-pink hover:text-bg hover:shadow-[0_0_25px_#b74b4b] hover:scale-105">Download CV   <Download /></a>
+              {/* <a
+                href="src/docs/Emilly-Soares-Moitinho-CV.pdf" download className="flex items-center border border-pink rounded-3xl w-fit gap-2.5 py-3! px-5! font-bold text-pink transition duration-300 ease-in-out hover:bg-pink hover:text-bg hover:shadow-[0_0_25px_#b74b4b] hover:scale-105">Download CV   <Download /></a> */}
             </div>
 
           </div>
